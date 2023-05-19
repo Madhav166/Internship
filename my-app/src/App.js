@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
-
+import Boil from './Components/Boil';
+import Magge from './Components/Magge';
+import Masala from './Components/Masala';
+import Wait from './Components/Wait';
+import Enjoy from './Components/Enjoy';
+import Home from './Components/Home';
+import { BrowserRouter, Route ,Routes} from 'react-router-dom';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' Component={Home}></Route>
+        <Route path='/step-1' Component={Boil}></Route>
+        <Route path='/step-2' Component={Magge}></Route>
+        <Route path='/step-3' Component={Masala}></Route>
+        <Route path='/step-4' Component={Wait}></Route>
+        <Route path='/step-5' Component={Enjoy}></Route>
+      </Routes>
+    </BrowserRouter>
+    </>
   );
 }
 
