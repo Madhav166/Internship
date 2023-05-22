@@ -1,13 +1,17 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './component.css';
+import { Button } from '@mui/material' 
+
 export default function Wait() {
     return(
         
-        <div>
-                <h1 style={{textAlign: 'center' ,marginTop: 100}}>Step 4</h1>
+        <div className='text'>
+                <h1 className='header'>Step 4</h1>
         <br />
-        <h2 style={{textAlign: 'center'}}>Wait 2-4 Minutes</h2><br /><br />
-        <div style={{textAlign: 'center'}}><Link to="/step-5" >Step 5</Link></div>
+        <h2>Wait 2-4 Minutes</h2><br /><br />
+        <Link to="/step-5"><Button variant="contained" >Step 5</Button></Link>
+
             
         </div>
     )

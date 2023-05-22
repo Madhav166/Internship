@@ -1,14 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './component.css';
+import { Button } from '@mui/material' 
 
 export default function Boil() {
     return(
-        <div>
-            <h1 style={{textAlign: 'center' ,marginTop: 100}}>Step 1</h1>
+        <div className='text'>
+            <h1 className='header'>Step 1</h1>
             <br />
-            <h2 style={{textAlign: 'center'}}>Boil 2 Cups of Water in a boul</h2><br /><br />
-            <div style={{textAlign: 'center'}}><Link to="/step-2" >Step 2</Link></div>
-            
+            <h2>Boil 2 Cups of Water in a boul</h2><br /><br />
+            <Link to="/step-2"><Button variant="contained" >Step 2</Button></Link>
+
         </div>
     )
 }

@@ -1,13 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './component.css';
+import { Button } from '@mui/material' 
+
 export default function Magge() {
     return(
-        <div>
-            <h1 style={{textAlign: 'center' ,marginTop: 100}}>Step 2</h1>
+        <div className='text'> 
+            <h1 className='header'>Step 2</h1>
             <br />
-            <h2 style={{textAlign: 'center'}}>Add The Magge to the Boiled Water</h2><br /><br />
-            <div style={{textAlign: 'center'}}><Link to="/step-3" >Step 3</Link></div>
-            
+            <h2>Add The Magge to the Boiled Water</h2><br /><br />
+
+            <Link to="/step-3"><Button variant="contained" >Step 3</Button></Link>
         </div>
     )
 }

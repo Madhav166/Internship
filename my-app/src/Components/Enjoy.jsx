@@ -1,13 +1,16 @@
 import React from 'react'
-
 import { Link } from 'react-router-dom'
+import './component.css';
+import { Button } from '@mui/material' 
+
 export default function Enjoy() {
     return(
-        <div>
-            <h1 style={{textAlign: 'center' ,marginTop: 100}}>Step 5</h1>
+        <div className='text'>
+            <h1 className='header'>Step 5</h1>
         <br />
-        <h2 style={{textAlign: 'center'}}>Enjoy your Magge</h2><br /><br />
-        <div style={{textAlign: 'center'}}><Link to="/" >Home</Link></div>
+        <h2>Enjoy your Magge</h2><br /><br />
+        <div className='button'><Link to="/"><Button variant="contained" className='toCenter'>Home</Button></Link></div>
+
             
         </div>
     )

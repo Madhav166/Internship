@@ -1,12 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './component.css';
+import { Button } from '@mui/material' 
+
 export default function Masala() {
     return(
-        <div><h1 style={{textAlign: 'center' ,marginTop: 100}}>Step 3</h1>
+        <div className='text'>
+        <h1 className='header'>Step 3</h1>
         <br />
-        <h2 style={{textAlign: 'center'}}>Add The Masala to the Boiled Water</h2><br /><br />
-        <div style={{textAlign: 'center'}}><Link to="/step-4" >Step 4</Link></div>
-            
+        <h2 >Add The Masala to the Boiled Water</h2><br /><br />
+        <Link to="/step-4"><Button variant="contained" >Step 4</Button></Link>
+
         </div>
     )
 }
