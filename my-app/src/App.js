@@ -6,12 +6,14 @@ import Enjoy from './Components/Enjoy';
 import Home from './Components/Home';
 import { BrowserRouter, Route ,Routes} from 'react-router-dom';
 import './App.css';
+import Login from './Components/Login';
 function App() {
   return (
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/' Component={Home}></Route>
+      <Route path='/' Component={Login}></Route>
+        <Route path='/home' Component={Home}></Route>
         <Route path='/step-1' Component={Boil}></Route>
         <Route path='/step-2' Component={Magge}></Route>
         <Route path='/step-3' Component={Masala}></Route>

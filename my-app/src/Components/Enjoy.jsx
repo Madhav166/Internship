@@ -9,7 +9,8 @@ export default function Enjoy() {
             <h1 className='header'>Step 5</h1>
         <br />
         <h2>Enjoy your Magge</h2><br /><br />
-        <div className='button'><Link to="/"><Button variant="contained" className='toCenter'>Home</Button></Link></div>
+        
+        <Link to="/home"><Button variant="contained" >Home</Button></Link>
 
             
         </div>
